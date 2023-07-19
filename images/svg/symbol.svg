@@ -1,0 +1,8 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-youtube" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.4545" d="M26.285 4.572h-20.572c-2.524 0.001-4.57 2.047-4.57 4.572v0 13.713c0 2.525 2.047 4.572 4.572 4.572v0h20.569c2.525 0 4.572-2.047 4.572-4.572v-13.713c0-2.525-2.047-4.572-4.572-4.572v0z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.4545" d="M12.137 21.303v-9.6c-0-0.008-0-0.017-0-0.026 0-0.492 0.399-0.892 0.892-0.892 0.178 0 0.345 0.052 0.484 0.143l-0.004-0.002 8.228 4.8c0.272 0.161 0.452 0.454 0.452 0.788s-0.18 0.627-0.448 0.786l-0.004 0.002-8.228 4.8c-0.131 0.076-0.288 0.121-0.455 0.121-0.506 0-0.916-0.41-0.916-0.916 0-0.002 0-0.003 0-0.005v0z"></path>
+</symbol>
+</defs>
+</svg>
