@@ -609,12 +609,15 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   padding: 128px 0;
+
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
+
 .promo__inner {
   display: flex;
-  gap: 109px;
+  padding: 0 70px;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: space-between;
 }
 .promo__title {
   font-family: "Yeseva One", cursive;
@@ -623,10 +626,18 @@ body {
   color: #fff;
 }
 .promo__btn {
+  min-width: 170px;
+}
+.promo__btn:hover,
+.promo__btn:focus {
+  width: 170px;
+  font-size: 17px;
+  padding-top: 18px;
 }
 
 .contacts {
   padding: 150px 0 50px 0;
+  overflow-x: hidden;
 }
 .contacts__inner {
   display: flex;
@@ -641,32 +652,36 @@ body {
   height: 440px;
   margin-top: 114px;
 }
-.form__title{
+.form__title {
   font-family: "Yeseva One", cursive;
   font-size: 40px;
   line-height: 1.15;
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
-.form__input{
+.form__input {
   width: 100%;
   height: 25px;
-  background-color:transparent;
-  border:none;
+  background-color: transparent;
+  border: none;
   outline: none;
-  padding: 23px 7px 11px 7px;
+  padding: 11px 7px 11px 7px;
   border-bottom: 1px solid #000;
 }
-.form__input::placeholder{
-  color: #B3B3B3;
-font-family: Comfortaa;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 1.14;
+.form__input:nth-of-type(1) {
+  margin-bottom: 14px;
 }
-.form__btn{
-display: inline-block;
-margin-top: 50px;
+
+.form__input::placeholder {
+  color: #b3b3b3;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.14;
+}
+.form__btn {
+  display: inline-block;
+  margin-top: 50px;
 }
 .contacts__img {
 }
@@ -836,6 +851,21 @@ margin-top: 50px;
   }
   .accordeon__item {
     width: 662px;
+  }
+  .promo {
+    background-image: url("../images/promo/promo-bg-1000px.jpg");
+  }
+
+  .promo__inner {
+    align-items: center;
+  }
+
+  .contacts__inner {
+    gap: 30px;
+  }
+  .form {
+    padding: 75px 21px;
+    min-width: 592px;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1439.9px) {
@@ -1248,6 +1278,64 @@ margin-top: 50px;
     height: 9.143px;
     background-size: contain;
   }
+
+  .promo {
+    background-image: url("../images/promo/promo-bg-768px.jpg");
+    height: 150px;
+    padding: 66px 0;
+  }
+  .promo__inner {
+    padding: 0 58px;
+    position: relative;
+  }
+  .promo__title {
+    font-size: 15px;
+    line-height: 1.13;
+  }
+  .promo__btn {
+    min-width: 125px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  .promo__btn:hover,
+  .promo__btn:focus {
+    max-width: 125px;
+    font-size: 14px;
+  }
+
+  .contacts__inner {
+    gap: 15px;
+  }
+  .form {
+    min-width: 440px;
+    height: 277px;
+    padding: 30px 22px;
+    margin-top: 4px;
+  }
+  .contacts__img {
+    width: 187px;
+    height: 285px;
+  }
+  .form__title {
+    font-size: 15px;
+    line-height: 1.13;
+    margin-bottom: 20px;
+  }
+  .form__input {
+    height: 50px;
+    padding: 18px 7px 18px 7px;
+  }
+  .form__input:nth-of-type(1) {
+    margin-bottom: 0px;
+  }
+  .form__input::placeholder {
+    font-size: 8px;
+    line-height: 1.14;
+  }
+  .form__btn {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1518,6 +1606,40 @@ margin-top: 50px;
   }
   .accordeon__item {
     width: 460px;
+  }
+
+  .promo {
+    height: 120px;
+    background-image: url("../images/promo/promo-bg-480px.jpg");
+    padding: 42px 0;
+  }
+  .promo__inner {
+    padding: 0 42px;
+    gap: 30px;
+  }
+  .promo__btn {
+    position: relative;
+    top: 0;
+    right: 0;
+    min-width: 87.23px;
+    font-size: 8px;
+    padding: 10px 20px;
+  }
+  .promo__btn:hover,
+  .promo__btn:focus {
+    width: 87.23px;
+    font-size: 8px;
+    padding: 10px 20px;
+  }
+
+  .contacts {
+    padding: 50px 0 50px 0;
+  }
+  .contacts__img {
+    display: none;
+  }
+  .form {
+    height: 267px;
   }
 }
 
@@ -1795,4 +1917,37 @@ margin-top: 50px;
     bottom: 48px;
     left: 0px;
   }
+
+  .promo {
+    background-image: url("../images/promo/promo-bg-360px.jpg");
+  }
+  .promo__inner {
+    padding: 0 10px;
+  }
+  .promo__title {
+    width: 230px;
+  }
+  .promo__btn {
+    min-width: 78.23px;
+    font-size: 8px;
+    padding: 10px 16px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+  }
+  .promo__btn:hover,
+  .promo__btn:focus {
+    width: 78.23px;
+    font-size: 8px;
+    padding: 10px 16px;
+  }
+  .contacts__inner {
+    display: inline-block;
+
+  }
+
+  .form {
+    min-width: 340px;
+    margin-top: 0px;
+    }
 }
